@@ -73,14 +73,14 @@ select {
   }
 }
 
-/*! END OF CSS RESET */
+/*! END OF CSS RESET--END OF CSS RESET */
 
 :root {
   --light-accent: hsl(200, 43%, 95%);
   --accent: hsl(197, 28%, 54%);
   --plain: hsl(204, 34%, 38%);
   --dark: hsl(206, 50%, 20%);
-  --blackish: hsl(0, 0%, 15%);
+  --blackish: hsl(0, 0%, 25%);
 
   --Hind: "Hind", sans-serif;
   --Montserrat: "Montserrat", sans-serif;
@@ -95,17 +95,18 @@ body {
   justify-content: center;
 }
 
-.container {
-}
-
 .plain-background {
-  background-image: linear-gradient(to top, hsla(0, 0%, 0%, 0.2), var(--plain));
+  background-image: linear-gradient(
+    to top,
+    hsla(0, 0%, 0%, 0.05),
+    var(--plain)
+  );
   background-color: var(--plain);
 }
 
 .top-contact {
   margin: auto;
-  width: 80%;
+  width: 90%;
   display: flex;
   gap: 1rem;
 
@@ -125,7 +126,7 @@ body {
 
 .navigation {
   margin: auto;
-  width: 80%;
+  width: 90%;
   display: flex;
   justify-content: space-between;
 
@@ -155,11 +156,15 @@ nav ul {
   font-family: var(--Hind);
   text-decoration: none;
   color: var(--blackish);
+
+  transition: color 250ms ease-in-out;
 }
 
 .nav-a:hover,
 .active {
   color: hsl(0, 0%, 100%);
+
+  transition: color 250ms ease-in-out;
 }
 
 .parrallax-window {
@@ -184,11 +189,11 @@ nav ul {
 
 .title {
   font-family: var(--Montserrat);
-  text-transform: uppercase;
 }
 
 .hero__title {
   font-size: 2.5rem;
+  text-transform: uppercase;
 }
 
 .hero__text {
@@ -221,7 +226,7 @@ nav ul {
 .cta {
   margin: auto;
   padding: 1.5rem 0;
-  width: 80%;
+  width: 90%;
   height: 14rem;
   display: flex;
   justify-content: space-between;
@@ -245,6 +250,7 @@ nav ul {
   font-size: 1.5rem;
   color: hsl(0, 0%, 100%);
   font-weight: 600;
+  text-transform: uppercase;
 }
 
 .cta__text {
@@ -272,7 +278,7 @@ nav ul {
 
 .services {
   margin: auto;
-  width: 80%;
+  width: 90%;
 }
 
 .services__header {
@@ -286,6 +292,7 @@ nav ul {
 .services__title {
   font-size: 2.25rem;
   font-weight: 600;
+  text-transform: uppercase;
 }
 
 .ellipsis {
@@ -294,4 +301,100 @@ nav ul {
 
 .services__text {
   font-family: var(--Hind);
+}
+
+.services__main {
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.services__column {
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+
+  text-align: center;
+  width: 15rem;
+}
+
+.services__icon__image {
+  margin: 1rem 0;
+  background-image: linear-gradient(hsla(0, 0%, 0%, 0.35), var(--accent));
+  border-radius: 26%;
+  padding: 1rem;
+
+  box-shadow: inset 0 0 0 1000px var(--accent);
+}
+
+.services__copy__title {
+  font-weight: 700;
+  font-size: 1.2rem;
+
+  transition: color 350ms ease-in-out;
+}
+
+.services__copy__title:hover {
+  color: var(--accent);
+  transition: color 350ms ease-in-out;
+}
+
+.services__copy__text {
+  margin-top: 0.8rem;
+}
+
+.light-background {
+  background-color: var(--light-accent);
+}
+
+.about-us {
+  width: 90%;
+  margin: 0 auto;
+  padding: 3rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.about-us__image {
+  width: 80rem;
+  padding: 1rem;
+}
+
+.about-us__copy {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.about-us__title {
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.about-us__desc {
+  font-size: 1.25rem;
+}
+
+.about-us__button {
+  margin-top: 2rem;
+  padding: 0.2rem 1rem;
+  border: 0;
+  border-radius: 100rem;
+  background-color: var(--dark);
+  color: hsl(0, 0%, 100%);
+
+  cursor: pointer;
+}
+
+.about-us__button:hover {
+  background-color: var(--accent);
+}
+
+.about-us__button:active {
+  background-color: var(--dark);
 }
