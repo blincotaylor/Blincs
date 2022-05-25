@@ -49,9 +49,8 @@ picture {
   display: block;
 }
 
-/* Inherit fonts for inputs and buttons */
+/* Inherit fonts for inputs */
 input,
-button,
 textarea,
 select {
   font: inherit;
@@ -81,6 +80,7 @@ select {
   --plain: hsl(204, 34%, 38%);
   --dark: hsl(206, 50%, 20%);
   --blackish: hsl(0, 0%, 25%);
+  --blackest: hsl(0, 0%, 15%);
 
   --Hind: "Hind", sans-serif;
   --Montserrat: "Montserrat", sans-serif;
@@ -106,9 +106,10 @@ body {
 
 .top-contact {
   margin: auto;
-  width: 90%;
+  width: 70%;
   display: flex;
   gap: 1rem;
+  justify-content: space-evenly;
 
   font-size: 0.9rem;
   font-family: var(--Hind);
@@ -126,7 +127,7 @@ body {
 
 .navigation {
   margin: auto;
-  width: 90%;
+  width: 70%;
   display: flex;
   justify-content: space-between;
 
@@ -226,7 +227,7 @@ nav ul {
 .cta {
   margin: auto;
   padding: 1.5rem 0;
-  width: 90%;
+  width: 70%;
   height: 14rem;
   display: flex;
   justify-content: space-between;
@@ -278,7 +279,7 @@ nav ul {
 
 .services {
   margin: auto;
-  width: 90%;
+  width: 70%;
 }
 
 .services__header {
@@ -345,6 +346,7 @@ nav ul {
   margin-top: 0.8rem;
 
   color: var(--blackish);
+  font-family: var(--Hind);
 }
 
 .light-background {
@@ -352,7 +354,7 @@ nav ul {
 }
 
 .about-us {
-  width: 90%;
+  width: 70%;
   margin: 0 auto;
   padding: 3rem;
   display: flex;
@@ -382,6 +384,10 @@ nav ul {
   font-size: 1.25rem;
 }
 
+.about-us__text {
+  font-family: var(--Hind);
+}
+
 .about-us__button {
   margin-top: 2rem;
   padding: 0.2rem 1rem;
@@ -402,15 +408,11 @@ nav ul {
 }
 
 .testimonials-background {
-  background-image: linear-gradient(
-      hsla(0, 0%, 0%, 0.664),
-      hsla(0, 0%, 0%, 0.5)
-    ),
-    url(assets/images/federico-bottos-Z3NceSeZqgI-unsplash2400x3600.jpg);
+  background: linear-gradient(to bottom, var(--blackish), var(--blackest));
 }
 
 .testimonials {
-  width: 90%;
+  width: 70%;
   margin: 0 auto;
   padding: 3rem 0;
   display: flex;
