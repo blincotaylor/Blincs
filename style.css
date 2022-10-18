@@ -108,8 +108,7 @@ body {
   margin: auto;
   width: 70%;
   display: flex;
-  gap: 1rem;
-  justify-content: space-evenly;
+  justify-content: space-between;
 
   font-size: 0.9rem;
   font-family: var(--Hind);
@@ -117,7 +116,7 @@ body {
 
 .top-contact__item {
   display: flex;
-  gap: 0.1rem;
+  gap: 0.25rem;
 }
 
 .contact-image {
@@ -183,7 +182,7 @@ nav ul {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 0.75rem;
+  gap: 2rem;
 
   color: hsl(0, 0%, 100%);
 }
@@ -202,17 +201,21 @@ nav ul {
 }
 
 .hero__button {
-  padding: 0.2rem 1rem;
+  padding: 0.75rem 1.25rem;
   background-color: var(--plain);
   color: hsl(0, 0%, 100%);
   border: 0;
   border-radius: 100rem;
 
   cursor: pointer;
+
+  transition: all 250ms ease-in-out;
 }
 
 .hero__button:hover {
   background-color: var(--dark);
+
+  transition: all 250ms ease-in-out;
 }
 
 .hero__button:active {
@@ -226,8 +229,8 @@ nav ul {
 
 .cta {
   margin: auto;
-  padding: 1.5rem 0;
-  width: 70%;
+  padding: 15rem 0;
+  width: 55%;
   height: 14rem;
   display: flex;
   justify-content: space-between;
@@ -257,20 +260,25 @@ nav ul {
 .cta__text {
   margin: 1rem 0;
   font-family: var(--Hind);
+  width: 70%;
 }
 
 .cta__button {
-  padding: 0.2rem 1rem;
+  padding: 0.75rem 1.25rem;
   background-color: var(--dark);
   color: hsl(0, 0%, 100%);
   border: 0;
   border-radius: 100rem;
 
   cursor: pointer;
+
+  transition: all 250ms ease-in-out;
 }
 
 .cta__button:hover {
   background-color: var(--plain);
+
+  transition: all 250ms ease-in-out;
 }
 
 .cta__button:active {
@@ -279,7 +287,7 @@ nav ul {
 
 .services {
   margin: auto;
-  width: 70%;
+  width: 85%;
 }
 
 .services__header {
@@ -287,7 +295,7 @@ nav ul {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;
+  gap: 0.5rem;
 }
 
 .services__title {
@@ -298,6 +306,7 @@ nav ul {
 
 .ellipsis {
   width: 32px;
+  padding: 1rem 0;
 }
 
 .services__text {
@@ -306,7 +315,7 @@ nav ul {
 
 .services__main {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   gap: 3rem;
 }
 
@@ -318,7 +327,7 @@ nav ul {
   gap: 1rem;
 
   text-align: center;
-  width: 15rem;
+  width: 20%;
 
   transition: color 350ms ease-in-out;
 }
@@ -354,7 +363,7 @@ nav ul {
 }
 
 .about-us {
-  width: 70%;
+  width: 90%;
   margin: 0 auto;
   padding: 3rem;
   display: flex;
@@ -412,7 +421,7 @@ nav ul {
 }
 
 .testimonials {
-  width: 70%;
+  width: 90%;
   margin: 0 auto;
   padding: 3rem 0;
   display: flex;
@@ -429,4 +438,49 @@ nav ul {
   text-transform: uppercase;
   font-size: 2rem;
   font-weight: 600;
+}
+
+.testimonials__row {
+  display: flex;
+  margin: 0 auto;
+  padding: 5rem;
+  gap: 5rem;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.testimonial {
+  position: relative;
+
+  padding-top: 4rem;
+  padding-inline: 1rem;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  background-color: var(--blackish);
+}
+
+.testimonial__img-crop {
+  position: absolute;
+  top: -2.5rem;
+
+  align-self: center;
+
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.testimonial__name {
+  text-align: right;
+  color: var(--accent);
+
+  font-family: var(--Montserrat);
+}
+
+.standout {
+  font-weight: bold;
 }
