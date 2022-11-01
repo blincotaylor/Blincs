@@ -57,7 +57,7 @@ select {
 }
 
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
-@media (prefers-reduced-motion: reduce) {
+/* @media (prefers-reduced-motion: reduce) {
   html:focus-within {
     scroll-behavior: auto;
   }
@@ -70,7 +70,7 @@ select {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
-}
+} */
 
 /*! END OF CSS RESET--END OF CSS RESET */
 
@@ -405,6 +405,7 @@ nav ul {
 
   color: var(--blackish);
   font-family: var(--Hind);
+  text-align: justify;
 }
 
 .light-background {
@@ -543,13 +544,97 @@ nav ul {
 /* ! SERVICES PAGE */
 
 .main-services {
-  display: flex;
+  /* margin: 1rem; */
+
+  display: grid;
+  /* gap: 1rem; */
+
+  color: #eee;
+}
+
+.grid-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* gap: 1rem; */
+}
+
+.service__item {
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 427px;
+  min-width: 100%;
+
+  display: grid;
+  grid-template-rows: 10% 20%;
+  /* align-content: end; */
+  gap: 1.25rem;
+  padding: 1rem;
+
+  /* !maybe? */
+  /* border-radius: 2px; */
+}
+
+.service__item__title {
+  font-size: 1.5rem;
+  font-family: var(--Montserrat);
+}
+
+.service__item__text {
+  font-size: 1.15rem;
+  font-family: var(--Hind);
+}
+
+.repairs {
+  background-image: linear-gradient(hsla(0, 0%, 0%, 0.5), hsla(0, 0%, 0%, 0.75)),
+    url(assets/images/window-drill.jpg);
+}
+
+.painting {
+  background-image: linear-gradient(hsla(0, 0%, 0%, 0.5), hsla(0, 0%, 0%, 0.75)),
+    url(assets/images/painting.jpg);
+}
+
+.plumbing {
+  background-image: linear-gradient(hsla(0, 0%, 0%, 0.5), hsla(0, 0%, 0%, 0.75)),
+    url(assets/images/plumbing.jpg);
+}
+
+.electrical {
+  background-image: linear-gradient(hsla(0, 0%, 0%, 0.5), hsla(0, 0%, 0%, 0.75)),
+    url(assets/images/electrical.jpg);
+}
+
+.tiling {
+  background-image: linear-gradient(hsla(0, 0%, 0%, 0.5), hsla(0, 0%, 0%, 0.75)),
+    url(assets/images/tiling.jpg);
+}
+
+.carpentry {
+  background-image: linear-gradient(hsla(0, 0%, 0%, 0.5), hsla(0, 0%, 0%, 0.75)),
+    url(assets/images/carpentry.jpg);
+}
+
+.construction {
+  background-image: linear-gradient(hsla(0, 0%, 0%, 0.5), hsla(0, 0%, 0%, 0.75)),
+    url(assets/images/construction.jpg);
+}
+
+.plastering {
+  background-image: linear-gradient(hsla(0, 0%, 0%, 0.5), hsla(0, 0%, 0%, 0.75)),
+    url(assets/images/plastering.jpg);
+}
+
+.fencing {
+  background-image: linear-gradient(hsla(0, 0%, 0%, 0.5), hsla(0, 0%, 0%, 0.75)),
+    url(assets/images/fencing.jpg);
 }
 
 /* ! CONTACT PAGE */
 
 .form-container {
-  height: 92.66vh;
+  min-height: 92.66vh;
+  height: 110vh;
   width: 70%;
   margin: auto;
 
