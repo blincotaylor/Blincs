@@ -17,32 +17,28 @@
   <body>
     <header>
       <!-- <section class="container">
-            <div class="top-contact">
-              <div class="top-contact__item">
-                <img
-                  src="assets/images/phone-call.png"
-                  alt=""
-                  class="contact-image"
-                />
-                <p>07979 425 924</p>
-              </div>
-              <div class="top-contact__item">
-                <img src="assets/images/email.png" alt="" class="contact-image" />
-                <p>example@example.com</p>
-              </div>
-            </div>
-          </section> -->
+        <div class="top-contact">
+          <div class="top-contact__item">
+            <img
+              src="assets/images/phone-call.png"
+              alt=""
+              class="contact-image"
+            />
+            <p>07979 425 924</p>
+          </div>
+          <div class="top-contact__item">
+            <img src="assets/images/email.png" alt="" class="contact-image" />
+            <p>example@example.com</p>
+          </div>
+        </div>
+      </section> -->
       <section class="container plain-background">
         <div class="navigation">
           <p class="logo">BLINC'S</p>
+          <input type="checkbox" id="nav-toggle" class="nav-toggle" />
           <nav>
             <ul>
               <li class="nav-li">
-                <!-- <a
-                      class="nav-a active"
-                      href="https://blincotaylor.github.io/Blincs/"
-                      >Home</a
-                    > -->
                 <a href="index.html" class="nav-a">Home</a>
               </li>
               <li class="nav-li">
@@ -50,19 +46,20 @@
                   >Our Services</a
                 >
               </li>
-              <!-- <li class="nav-li"><a class="nav-a" href="#">Our Works</a></li> -->
-              <!-- <li class="nav-li"><a class="nav-a" href="#">About Us</a></li> -->
               <li class="nav-li">
                 <a class="nav-a" href="contact.html">Contact</a>
               </li>
             </ul>
           </nav>
+          <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+          </label>
         </div>
       </section>
     </header>
     <section class="container light-background">
       <div class="main-services">
-        <div class="grid-row">
+        <div class="grid">
           <div class="service__item repairs">
             <p class="service__item__title">Repairs &amp; Maintenance</p>
             <p class="service__item__text">
@@ -92,8 +89,6 @@
               problems and keep the water (or waste) flowing.
             </p>
           </div>
-        </div>
-        <div class="grid-row">
           <div class="service__item electrical">
             <p class="service__item__title">Electrical</p>
             <p class="service__item__text">
@@ -120,8 +115,6 @@
               pop in to hang your new door.
             </p>
           </div>
-        </div>
-        <div class="grid-row">
           <div class="service__item construction">
             <p class="service__item__title">Construction</p>
             <p class="service__item__text">
