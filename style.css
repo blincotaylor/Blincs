@@ -98,6 +98,7 @@ select {
 /*! end of custom scrollbar */
 
 :root {
+  color-scheme: only light;
   --light-accent: hsl(200, 43%, 95%);
   --accent: hsl(197, 28%, 54%);
   --plain: hsl(204, 34%, 38%);
