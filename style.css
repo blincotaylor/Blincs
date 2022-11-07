@@ -733,12 +733,6 @@ nav ul {
 
 .emergency-num {
   color: #eee;
-  font-weight: 600;
-  text-decoration: none;
-}
-
-.emergency-num:hover {
-  text-decoration: underline;
 }
 
 .contact {
