@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 /* Box sizing rules */
 *,
 *::before,
@@ -698,7 +700,6 @@ nav ul {
 .form-container {
   padding-top: 2rem;
   min-height: 92.66vh;
-  /* height: 110vh; */
   width: 70%;
   margin: auto;
 
@@ -710,22 +711,37 @@ nav ul {
   color: #eee;
 }
 
+.form-text {
+  font-family: "Hind", sans-serif;
+  width: 70%;
+}
+
 .form-text__title {
   margin-bottom: 2rem;
   font-size: 2rem;
   text-align: center;
 }
 
+.form-text__subtitle {
+  font-size: 1.25rem;
+}
+
 .form-text__emergency-text {
-  margin-top: 0.5rem;
+  margin-block: 0.75rem;
   font-style: italic;
 }
 
-.contact {
-  width: 70%;
+.emergency-num {
+  color: #eee;
+  font-weight: 600;
+  text-decoration: none;
 }
 
-.form-text {
+.emergency-num:hover {
+  text-decoration: underline;
+}
+
+.contact {
   width: 70%;
 }
 
@@ -753,14 +769,14 @@ input {
   background-color: #eee;
 
   font-size: 1.2rem;
-  font-family: var(--Hind);
+  font-family: "Montserrat", sans-serif;
   font-weight: bold;
 }
 
 textarea {
   background-color: #eee;
   font-size: 1.2rem;
-  font-family: var(--Hind);
+  font-family: "Montserrat", sans-serif;
   font-weight: bold;
   border-radius: 0.5rem;
   padding: 0.5rem;
